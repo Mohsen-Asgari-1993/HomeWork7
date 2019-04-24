@@ -21,4 +21,13 @@ public class Tamrin2 {
         third.addAll(secondSet);
         System.out.println("First Tree Set + Second Tree Set : " + third);
     }
+
+    private static void commonElemntsInTreeSets(TreeSet<Character> firstSet, TreeSet<Character> secondSet) {
+        TreeSet<Character> third = new TreeSet<>();
+        for (Character set : firstSet) {
+            if (secondSet.contains(set))
+                third.add(set);
+        }
+        System.out.println("Common Elements in First and Second Tree Set : " + third);
+    }
 }
