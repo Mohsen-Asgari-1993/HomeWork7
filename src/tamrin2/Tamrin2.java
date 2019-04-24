@@ -14,4 +14,11 @@ public class Tamrin2 {
             secondSet.add((char) (random.nextInt(26) + 97));
 
     }
+
+    private static void gatheringTreeSets(TreeSet<Character> firstSet, TreeSet<Character> secondSet) {
+        TreeSet<Character> third = new TreeSet<>();
+        third.addAll(firstSet);
+        third.addAll(secondSet);
+        System.out.println("First Tree Set + Second Tree Set : " + third);
+    }
 }
