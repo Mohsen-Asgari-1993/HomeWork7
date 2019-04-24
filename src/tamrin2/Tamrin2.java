@@ -5,6 +5,16 @@ import java.util.TreeSet;
 
 public class Tamrin2 {
 
+    public static void main(String[] args) {
+        TreeSet<Character> firstSet = new TreeSet<>();
+        TreeSet<Character> secondSet = new TreeSet<>();
+        initializeTreeSet(firstSet, secondSet);
+        System.out.println("First Tree Set: "+firstSet);
+        System.out.println("Second Tree Set: "+secondSet);
+        gatheringTreeSets(firstSet, secondSet);
+        commonElemntsInTreeSets(firstSet, secondSet);
+    }
+
     private static void initializeTreeSet(TreeSet<Character> firstSet, TreeSet<Character> secondSet) {
         Random random = new Random();
         while (firstSet.size() != 10)
