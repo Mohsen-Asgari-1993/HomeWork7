@@ -33,4 +33,8 @@ public class Permute {
             }
         }
     }
+
+    public static void printPermutation(String word) {
+        permutation(initMap(word), "", word.length());
+    }
 }
