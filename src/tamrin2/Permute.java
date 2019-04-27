@@ -18,4 +18,19 @@ public class Permute {
         }
         return map;
     }
+
+    private static void permutation(Map<Character, Integer> map, String perm, int remain) {
+        if (remain == 0) {
+            System.out.println(perm);
+        } else {
+            for (char ch : map.keySet()) {
+                if (map.get(ch) > 0) {
+                    String nextPerm = perm + ch;
+                    map.put(ch, map.get(ch) - 1);
+                    permutation(map, nextPerm, remain - 1);
+                    map.put(ch, map.get(ch) + 1);
+                }
+            }
+        }
+    }
 }
