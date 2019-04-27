@@ -1,4 +1,4 @@
-package tamrin2;
+package tamrin1;
 
 import java.util.HashMap;
 import java.util.Map;
