@@ -2,8 +2,16 @@ package tamrin2;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Permute {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String word = scanner.next();
+        printPermutation(word);
+    }
+
 
     private static Map<Character, Integer> initMap(String word) {
         Map<Character, Integer> map = new HashMap<>();
